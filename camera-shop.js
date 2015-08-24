@@ -1,6 +1,7 @@
 var app = angular.module("cameraShop", []);
 
 app.controller("MySecondController", function($scope){
+  $scope.test = "test";
   $scope.cameras = [
                     {
                       title: "Nikon D3100 DSLR",
