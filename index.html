@@ -18,5 +18,26 @@
       <option name="dropdown" value="neither">Neither</option>
     </select>
     <h3>I love {{dropdown}} <3</h3>
+    {{3.14159265359 | currency : "€"}}
+    <h1>Please say something</h3>
+    <input type="text" ng-model="saysomething">
+    <h3>Yelling: {{saysomething | uppercase}}</h3>
+    <h3>Whispering: {{saysomething | lowercase}}</h3>
+    {{3.14159265359 | number:3}}
+    {{3.14159265359 | number:6}}
+    {{3.14159265359 | number:1}}
+    <h1>How many digits of pi do you want?</h1>
+    <select ng-model="digits">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select>
+    <h3>Here you go! The first {{digits}} <ng-pluralize count="digits" when="{'1': 'digit ', 'other': 'digits '}"></ng-pluralize>of pi!</h3>
+    <br>
+    <h3>{{3.14159265359 | number:digits}}</h3>
   </body>
 </html>

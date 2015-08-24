@@ -1,6 +1,4 @@
-
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('[name=auto]').addEventListener('input', function (e) {
-    document.querySelector('h1').innerHTML = e.target.value
-  })
-})
+var calculate = function(amount, tip){
+  var tip = tip.replace('%', '')
+  console.log(tip);
+}
