@@ -9,6 +9,12 @@
     <link rel="stylesheet" type="text/css" href="style.css"></link>
   </head>
   <body ng-controller="MySecondController">
+    <h1>Word Reverser</h1>
+    <input type="text" ng-model="word">
+    <p>Your word is: {{word}}</p>
+    <button ng-click="reverseWord(word)">Reverse!</button>
+    <h3>The number is: {{number}}</h3>
+    <button ng-click="pickRandomNumber()">Pick Random Number</button>
     <h1>Camera Shop</h1>
     <select ng-model="q">
       <option value="rating">Rating</option>

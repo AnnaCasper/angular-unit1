@@ -1,6 +1,40 @@
-.photo {
-  height: 100px;
+body{
+  text-align: center;
 }
-.highlight {
-  color: gold
+
+.player1 {
+  margin-left: 200px;
+  float: left;
+  height: 400px;
+  width:400px;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+.player2 {
+  margin-left: 150px;
+  float: left;
+  height: 400px;
+  width:400px;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+
+.score1, .score2 {
+  font-size: 250px;
+}
+.reset {
+  height: 40px;
+  width: 250px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.red {
+  background-color: red
+}
+.green {
+  background-color: green
 }

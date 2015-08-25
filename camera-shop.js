@@ -2,6 +2,7 @@ var app = angular.module("cameraShop", []);
 
 app.controller("MySecondController", function($scope){
   $scope.test = "test";
+  $scope.number = 5;
   $scope.cameras = [
                     {
                       title: "Nikon D3100 DSLR",
@@ -25,4 +26,12 @@ app.controller("MySecondController", function($scope){
                       onSale: true
                     }
                   ]
+  $scope.pickRandomNumber = function(){
+    $scope.number = Math.floor(Math.random() * 10) + 1
+  };
+  $scope.reverseWord = function (word) {
+    var array = word.split('');
+    array = array.reverse();
+    $scope.word = array.join('')
+  }
 })
