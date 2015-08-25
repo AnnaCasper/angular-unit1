@@ -1,0 +1,10 @@
+th, tr {
+  border: 1px solid black;
+}
+
+th, tr {
+  width: 300px;
+}
+button {
+  border: 1px solid black;
+}
