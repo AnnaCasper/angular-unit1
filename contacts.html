@@ -27,7 +27,7 @@
         <th>Email</th>
         <th>Phone</th>
       </thead>
-        <tr ng-repeat="contact in contacts | filter:search">
+        <tr ng-repeat="contact in contacts | filter:search" ng-mouseover='turnRed()'>
           <td>{{contact.name}}</td>
           <td>{{contact.email}}</td>
           <td>{{contact.phone}}</td>

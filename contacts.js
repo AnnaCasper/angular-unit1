@@ -9,4 +9,7 @@ app.controller('ContactsAppController', function ($scope) {
     $scope.email = '';
     $scope.phone = '';
   };
+  $scope.turnRed = function (){
+    $scope.name = 'ANNA'
+  };
 })
